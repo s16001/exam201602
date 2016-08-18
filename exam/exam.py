@@ -55,18 +55,23 @@ def cubic_list(data):
 
 # 底辺x,高さyの直角三角形(right angled triangle)の残り1つの辺の長さを返してください
 def calc_hypotenuse(x, y):
-    pass
+    import math
+    hypotenuse = math.sqrt(x ** 2 + y ** 2)
+    print(hypotenuse)
 
 
 # 底辺x,斜辺vの直角三角形の残り1つの辺の長さを返してください
 def calc_subtense(x, v):
-    pass
-
+    import math
+    subtense = math.sqrt(v ** 2 - x ** 2)
+    print(subtense)
 
 # 三辺の長さがそれぞれx,y,zの三角形の面積を返してください
 def calc_area_triangle(x, y, z):
-    pass
-
+    import math
+    s = (x + y + z) / 2
+    t = abs(s * (s - x) * (s - y) * (s - z))
+    print(math.sqrt(t))
 
 # 引数a,b,cを小数点以下2桁表示で空白切りで表示してください
 def point_two_digits(a, b, c):
